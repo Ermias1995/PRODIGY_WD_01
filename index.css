@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+   height: 100vb; 
+   background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg");
+   background-repeat: no-repeat;
+   background-size:cover;
+   backdrop-filter: blur(5px);
+   display: flex;
+}
+header{
+    backdrop-filter: none;
+    position: fixed;
+    top: 10;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: rgba(128, 128, 128, 0.856);*/
+    background-color: rgba(255, 255, 255,0.5);
+    box-shadow: 1px 1px 5px black;
+    padding: 0px 50px;    
+}
+.nav{
+    width: 200px;
+}
+header ul{
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+header ul li a{
+    text-decoration: none;
+    position: relative;
+    color: black;
+    margin: 0 15px;   
+    font-weight: 100%;
+}
+header h1{
+    color: rgba(32, 56, 34, 0.932);
+}
+header i{
+    font-size: 2.5rem;
+    background: linear-gradient(green,yellow,red);
+    color: white;
+    border-radius: 50%;
+}
+main{
+    width: 100%;
+    display: flex;
+}
+main .content{
+    width:400px;
+    height: 400px;
+    margin:auto;
+    background-color:rgb(82, 72, 139);
+}
