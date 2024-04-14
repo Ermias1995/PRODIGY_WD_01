@@ -9,7 +9,7 @@ body{
    background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg");
    background-repeat: no-repeat;
    background-size:cover;
-   backdrop-filter: blur(3px);
+   backdrop-filter: blur(5px);
    display: flex;
 }
 header{
