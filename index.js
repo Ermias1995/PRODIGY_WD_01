@@ -1,4 +1,17 @@
 const qoute = document.getElementById("qoute");
+const check = document.getElementById("check");
+const sidebar = document.getElementById("sidebar");
+
+check.addEventListener('click',()=>{
+    if(check.checked){
+        sidebar.style.display = 'flex';
+        sidebar.style.flexDirection = 'column';
+        sidebar.style.justifyContent = 'first baseline';
+    }else{
+        sidebar.style.display = 'none';
+        sidebar.style.transitionDelay = '0.5s';
+    }
+});
 
 function changeImage1(){
     document.body.style.background = "url('https://www.ancient-origins.net/sites/default/files/field/image/Lalibela.jpg') center center / cover no-repeat";
