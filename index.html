@@ -12,8 +12,8 @@
     </head>
     <body>
         <header>
-            <i class="fas fa-history"></i>
-            <h1>Back in time</h1>
+            <i id="logo" class="fas fa-history"></i>
+            <h1>Back in time</h1> 
             <nav class="nav">
                 <ul>
                     <li><a id="home" href="">Home</a></li>
@@ -21,8 +21,16 @@
                     <li><a id="blog" href="">Blog</a></li>
                     <li><a id="about" href="">About</a></li>
                 </ul>
+                <input type="checkbox" id="check"/>
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
             </nav>
         </header>
+            <ul class="sidebar" id="sidebar">
+                <li><a id="home" href="">Home</a></li>
+                <li><a id="history" href="">History</a></li>
+                <li><a id="blog" href="">Blog</a></li>
+                <li><a id="about" href="">About</a></li>
+            </ul>
         <main>
             <div class="content">
                 <p id="qoute">“A generation which ignores history has no past and no future.”
