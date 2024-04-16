@@ -53,13 +53,13 @@ header ul li a:hover{
 header h1{
     color: white;
 }
-header i{
+header #logo{
     font-size: 2.5rem;
     background: linear-gradient(green,yellow,red);
     color: white;
     border-radius: 50%;
 }
-header i:hover{
+header #logo:hover{
     font-size: 5rem;
 }
 main{
@@ -128,4 +128,78 @@ main .content{
 }
 .img .buttons:hover{
     transform: scale(1,1.3);
+}
+#checkbtn{
+    float:right;
+    line-height: 80px;
+    margin-right: 10px;
+    font-size: 25px; 
+    color: white; 
+    display: none; 
+}
+#check{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
+@media(max-width:1000px) {
+    #checkbtn{
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    } 
+    header{
+        height: 50px;
+    }
+    .sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content:first baseline;
+        align-items: center;
+        margin-top: 50px;
+        background-color: rgba(44, 43, 43, 0.397);
+        width: 40%;
+        gap: 40px;
+    }
+    .sidebar li{
+        list-style: none;
+        margin-top: 20px;
+    }
+    .sidebar li a{
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+        font-size: large;
+    }
+    .sidebar li a:hover{
+        border-bottom: 2px solid rgb(9, 226, 143);
+        font-size: larger;
+        transition: 0.2s;
+    }
+}
+@media(max-width:600px){
+    #checkbtn{
+        display: none;
+    }
+    .sidebar{
+        display: none;
+    }
+    header{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+        background-color: rgba(44, 43, 43, 0.801);
+    }
+    header ul{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    }
+    #logo{
+        display: none;
+    }
 }
